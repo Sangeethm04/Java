@@ -42,8 +42,10 @@ public class PizzaRunMenachery
       /* Create two objects and print the number of pizzas for the order, the cost for each order,
          and the number of extra slices that will be left over once everyone eats their slices.
       */
-      PizzaRun pizza1 = new PIzzaRun(30.0, );
+      PizzaRun pizza1 = new PizzaRun(35.0, 5, 5, 5, 5);
+      PizzaRun pizza2 = new PizzaRun(35.0, 5, 5, 5, 2);
       System.out.println(pizza1.getPizzas() + pizza1.getCost());
+      System.out.println(pizza2.getPizzas() + pizza2.getCost());
    }
 }
 
