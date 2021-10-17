@@ -3,8 +3,8 @@
 // Pizza Creation
 
 
-/*This wouldn't make sense if somebody only 7 pizzas for example where it would not say there is a full pizza so it would not 
-count it but I added 7 in case there was 9 slices and made it an int so it's always a whole number*/
+/*This wouldn't make sense if somebody only 7 pizzas for example where it would not say there is not a full pizza so it would not 
+count it but I added 7 to the total number of slices in case there was 9 slices and made numPizzas an int so it's always a whole number*/
 
 
 public class PizzaRunMenachery
@@ -21,8 +21,8 @@ public class PizzaRunMenachery
    //person1,2,3,4 is amount of slices ate by each
    public PizzaRunMenachery(double cost, int person1, int person2, int person3, int person4)
    {
-
-       sum = person1 + person2 + person3 + person4;
+    costPerPizza = cost / slicesPerPizza;
+    sum = person1 + person2 + person3 + person4;
     numPizzas = (int)((sum + 7)/slicesPerPizza);
     totalCost = cost * numPizzas;
     extra = (numPizzas * slicesPerPizza) - (sum);     
