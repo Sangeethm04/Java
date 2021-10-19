@@ -3,36 +3,27 @@
 // Use var to reverse and output each number one by one
 
 public class DigitReverseMenachery {
-    public String num1 = "12312";
+    private int num1;
+    private int num2;
+    private int num3;
+    private int num4;
+    private int num5;
+    private int num6;
+    private int num7;
 
-    public String digit() {
-       String individual = num1.substring(0,1);
-        return individual;
+    public int digit(int num2) {
+        num1 = num2;
+        num3 = num1 % 10;
+        num4 = num3 % 10;
+        num5 = num4 % 10;
+        num6 = num5 % 10;
+      return num3;
     }
-    public String digit2() {
-       String individual = num1.substring(1,2);
-        return individual;
-    }
-    public String digit3() {
-       String individual = num1.substring(2,3);
-        return individual;
-    }
-    public String digit4() {
-       
-       String individual = num1.substring(3,4);
-        return individual;
-    }
-    public String digit5() {
-       String individual = num1.substring(4);
-        return individual;
-    }
+
     public static void main(String[] args) {
         DigitReverseMenachery nums = new DigitReverseMenachery();
-        System.out.println(nums.digit5());
-        System.out.println(nums.digit4());
-        System.out.println(nums.digit3());
-        System.out.println(nums.digit2());
-        System.out.println(nums.digit());
+        System.out.println(nums.digit(12345));
+
     }
 }
   
