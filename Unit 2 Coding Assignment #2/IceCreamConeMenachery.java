@@ -9,22 +9,25 @@ public class IceCreamConeMenachery {
         public double surfaceArea;  
         public double volume; 
 
-        public Double getSurfaceArea(double heights, double radiuss) {
+        public IceCreamConeMenachery(double heights, double radiuss) {
             height = heights;
             radius = radiuss;
-            return ((Math.PI)*(radius)*(radius + Math.sqrt((height*height) + (radius*radius))));
         }
 
-        public Double getVolume(double heights, double radiuss) {
-            height = heights;
-            radius = radiuss;
+        public Double getSurfaceArea() {
+            surfaceArea = ((Math.PI)*(radius)*(radius + Math.sqrt((height*height) + (radius*radius))));
+            return surfaceArea;
+        }
+
+        public Double getVolume() {
+           
             volume = ((Math.PI)*(radius*radius)*(height/3));
             return volume;
         }
 
     public static void main(String[] args) {
-          IceCreamConeMenachery order1 = new IceCreamConeMenachery();
-          System.out.println(order1.getSurfaceArea(5, 10));
-          System.out.println(order1.getVolume(5, 10));
+          IceCreamConeMenachery order1 = new IceCreamConeMenachery(5, 10);
+          System.out.println(order1.getSurfaceArea());
+          System.out.println(order1.getVolume());
     }
 }

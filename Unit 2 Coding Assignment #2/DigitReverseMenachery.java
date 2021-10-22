@@ -8,20 +8,25 @@ public class DigitReverseMenachery {
     private int num3;
 
 
-    public int digit(int num2) {
-      num1 = num2 % 10;
+    public DigitReverseMenachery(int num3) {
+    num1 = num3;
+    }
+
+
+    public int digit() {
+      num1 = num1 % 10;
       num2 = num2 / 10;  
       System.out.println(num1);
       return num2;
     }
 
     public static void main(String[] args) {
-        DigitReverseMenachery nums = new DigitReverseMenachery();
-        int number = nums.digit(12345);
-        number = nums.digit(number);
-        number = nums.digit(number);
-        number = nums.digit(number);
-        number = nums.digit(number);
+        DigitReverseMenachery nums = new DigitReverseMenachery(12345);
+        System.out.println(nums.digit());
+        System.out.println(nums.digit());
+        System.out.println(nums.digit());
+        System.out.println(nums.digit());
+        System.out.println(nums.digit());
 
     }
 }
