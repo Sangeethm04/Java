@@ -25,8 +25,8 @@ public class IceCreamConeMenachery {
             return volume;
         }
 
-    public static void IceCreamConeMenachery(String[] args) {
-          IceCreamConeMenachery order1 = new IceCreamConeMenachery(5, 10);
+    public static void main(String[] args) {
+        IceCreamConeMenachery order1 = new IceCreamConeMenachery(5, 10);
           System.out.println(order1.getSurfaceArea());
           System.out.println(order1.getVolume());
     }

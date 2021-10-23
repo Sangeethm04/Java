@@ -3,8 +3,14 @@
 // Use two nums for all values and object creation
 
 public class PairMenachery {
-    public double num1 = 5;
-    public double num2 = 10;
+    public double num1;
+    public double num2;
+
+
+    public PairMenachery(double nums1, double nums2) {
+        num1 = nums1;
+        num2 = nums2;
+    }
 
     public Double getSum() {
         Double sum = num1 + num2;
@@ -35,7 +41,7 @@ public class PairMenachery {
         return min;
     }
     public static void main(String[] args) {
-        PairMenachery nums = new PairMenachery();
+        PairMenachery nums = new PairMenachery(5, 10);
         System.out.println("Sum - " + nums.getSum());
         System.out.println("Difference - " + nums.getDifference());
         System.out.println("Product - " + nums.getProduct());
