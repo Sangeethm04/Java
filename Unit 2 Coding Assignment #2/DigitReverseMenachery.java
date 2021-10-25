@@ -6,7 +6,7 @@ public class DigitReverseMenachery {
     private int num1;
     private int num2;
     private int num3;
-
+    
 
     public DigitReverseMenachery(int num3) {
     num1 = num3;
