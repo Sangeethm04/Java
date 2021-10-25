@@ -15,7 +15,7 @@ public class IceCreamConeMenachery {
         }
 
         public Double getSurfaceArea() {
-            surfaceArea = ((Math.PI)*(radius)*(radius + Math.sqrt((height*height) + (radius*radius))));
+            surfaceArea = ((Math.PI)*(radius)*(radius + Math.sqrt((height*height) + (radius*radius)))) - (Math.PI * (radius*radius));
             return surfaceArea;
         }
 
@@ -26,7 +26,7 @@ public class IceCreamConeMenachery {
         }
 
     public static void main(String[] args) {
-          IceCreamConeMenachery order1 = new IceCreamConeMenachery(5, 10);
+        IceCreamConeMenachery order1 = new IceCreamConeMenachery(5, 10);
           System.out.println(order1.getSurfaceArea());
           System.out.println(order1.getVolume());
     }
