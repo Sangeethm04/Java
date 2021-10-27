@@ -6,7 +6,7 @@ public class GuessingGame {
 Scanner input = new Scanner(System.in);
 
 //Create random number and get user’s guess
-int x = (int)((Math.random() * 11) + 1);//Random method 
+int x = (int)((Math.random() * 10) + 1);//Random method 
 System.out.println("Guess a number between 1 and 10.");
 int guess = input.nextInt();
 
