@@ -46,7 +46,7 @@ else if(grade.equals("A-"))
 
 gpa = 3.7;
 }
-else if(grade.equals("+"))
+else if(grade.equals("B+"))
 
 { 
     gpa = 3.3;
@@ -65,30 +65,27 @@ else if(grade.equals("C+"))
 {
 gpa = 2.3;
 }
-else if(grade.equals("D+"))
+else if(grade.equals("C"))
 { 
     gpa = 2.0;
 } 
+else if(grade.equals("D+"))
+{
+gpa = 1.3;
+}
 else if(grade.equals("D"))
-{
-gpa = 1.7;
-}
-
-else if(grade.equals("D-"))
-{
-    gpa = 1.3;
-}
-
-else if(grade.equals("F"))
-
 {
 gpa = 1.0;
 }
-
-else
-
+else if(grade.equals("D-")){
+gpa = 0.7;
+}
+else if(grade.equals("F"))
 {
-
+gpa = 0.0;
+}
+else
+{
 gpa = -1;
  
 }

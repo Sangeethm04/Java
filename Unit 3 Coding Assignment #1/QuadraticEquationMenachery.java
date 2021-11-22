@@ -1,6 +1,6 @@
 /*
 Sangeeth Menachery
-Exercise 3.2
+Exercise 3.3
 Solutions using discriminant
 */
 
@@ -42,18 +42,21 @@ public class QuadraticEquationMenachery {
         }
     }
 
-    public void getSolutions() {
+    public String getSolutions() {
         hasSolutions();
         findSolutions();
         System.out.println(discriminant);
         if(discriminant > 0){
-            System.out.println("x1 = " + solution1 + " and x2 = " + solution2);
+            String anss1 = "x1 = " + solution1 + " and x2 = " + solution2;
+            return anss1;
         }
         else if(discriminant == 0){
-            System.out.println("x1 = " + solution1);
+            String anss2 = "x1 = " + solution1;
+            return anss2;
         }
         else{
-            System.out.println("No real solutions");
+            String anss2 = "No real solutions";
+            return anss2;
         }
     }
 

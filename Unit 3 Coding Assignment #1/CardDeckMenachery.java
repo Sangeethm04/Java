@@ -130,6 +130,36 @@ case "KD": description = "King of Diamonds";
 break;
 default: description = "Invalid card";
 break;
+case "AH": description = "Ace of Hearts";
+break;
+case "1H": description = "One of Hearts";
+break;
+case "2H": description = "Two of Hearts";
+break;
+case "3H": description = "Three of Hearts";
+break;
+case "4H": description = "Four of Hearts";
+break;
+case "5H": description = "Five of Hearts";
+break;
+case "6H": description = "Six of Hearts";
+break;
+case "7H": description = "Seven of Hearts";
+break;
+case "8H": description = "Eight of Hearts";
+break;
+case "9H": description = "Nine of Hearts";
+break;
+case "10H": description = "Ten of Hearts";
+break;
+case "JH": description = "Jack of Hearts";
+break;
+case "QH": description = "Queen of Hearts";
+break;
+case "KH": description = "King of Hearts";
+break;
+
+
 }
         return description;
     }
