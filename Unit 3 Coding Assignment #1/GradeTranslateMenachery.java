@@ -69,6 +69,10 @@ else if(grade.equals("C"))
 { 
     gpa = 2.0;
 } 
+else if(grade.equals("C-"))
+{
+gpa = 1.7;
+}
 else if(grade.equals("D+"))
 {
 gpa = 1.3;
