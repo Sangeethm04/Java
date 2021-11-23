@@ -8,6 +8,7 @@ public class GuessingGame
    // Choose a random number from 0-100 
  int rand = (int)(Math.random() * 100);
    // Ask the user to guess a number from 0 to 100 
+   System.out.println("Guess a number between 0 to 100");
    // Get the first guess using scan.nextInt();
  int guess = scan.nextInt();
 
@@ -23,7 +24,7 @@ while (guess != rand)
    
       // If the guess is greater than the random number, print out "Too high!"
     if (guess > rand) {
-        System.out.println("Too hight");
+        System.out.println("Too high");
     }
       // Get a new guess (save it into the same variable)
     guess = scan.nextInt();
