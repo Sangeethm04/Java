@@ -1,21 +1,18 @@
 import java.util.Scanner;
 
-public class PigLatin {
+class PigLatin {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+System.out.print ("Enter a word (end to end): ");
+String word = scan.next();
+String pigLatin;
+while (word != "end") {
+pigLatin = pl.translate(word);
+System.out.println(pigLatin);
+System.out.print("Enter a word(end to end): ");
+word = scan.next();
 
-    public String translate(String str) {
-while (str != "end") {
-    String pigLatin = str.substring(1) + str.substring(0,1) + "ay";
-       System.out.println(str + " in Pig Latin is " + pigLatin);
-       break;
 }
-return str;
 }
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String word = scan.nextLine();
-        String pigLatin;
-    PigLatin wordinput = new PigLatin();
-    
-    pigLatin = wordinput.translate(word);
-    }
 }
+
