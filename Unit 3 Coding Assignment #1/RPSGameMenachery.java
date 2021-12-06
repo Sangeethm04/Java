@@ -14,71 +14,71 @@ public static void main(String[] args) {
 String cpuRPS; 
 String uRPS = "t";
 
-Scanner RPS = new Scanner(System.in); 
-System.out.println("Enter Rock, Paper, Sissor, Spock, or Lizard:"); 
-String userRPS = RPS.nextLine();
-
-if(userRPS.equals("Rock")|| userRPS.equals("ROCK")||userRPS.equals("rock"))
-
-{ 
-    uRPS = "R";
-}
-
-else if(userRPS.equals("Paper")||userRPS.equals("PAPER")||userRPS.equals("paper"))
-
-{ 
-    uRPS = "P";
-}
-
-else if(userRPS.equals("Scissor")||userRPS.equals("SCISSOR")||userRPS.equals("scissor"))
-{
-uRPS = "Sc";
-
-}
-
-else if(userRPS.equals("Lizard") || userRPS.equals("LIZARD")||userRPS.equals("lizard"))
-{
-uRPS = "L";
-
-}
-
-else if(userRPS.equals("Spock")||userRPS.equals("SPOCK") || userRPS.equals("spock"))
-
-{
-
-uRPS = "Sp";
-}
-else
-
-{ 
-    System.out.println("wrong input");
-}
-
-int cpu  = (int)(Math.random()*5+1);
-
-if(cpu == 1) 
-{
-    cpuRPS = "Spock";
-}
-else if(cpu == 2)
-
-cpuRPS = "Lizards";
-
-else if(cpu == 3)
-
-cpuRPS = "Scissors";
-
-else if (cpu == 4) {
-    cpuRPS = "Paper";
-}
+try (Scanner RPS = new Scanner(System.in)) {
+    System.out.println("Enter Rock, Paper, Sissor, Spock, or Lizard:"); 
+    String userRPS = RPS.nextLine();
     
-    else  {
-        cpuRPS = "Rock";
+    if(userRPS.equals("Rock")|| userRPS.equals("ROCK")||userRPS.equals("rock"))
+    
+    { 
+        uRPS = "R";
     }
-
-
-System.out.println("You picked: "+ userRPS); 
-
+    
+    else if(userRPS.equals("Paper")||userRPS.equals("PAPER")||userRPS.equals("paper"))
+    
+    { 
+        uRPS = "P";
+    }
+    
+    else if(userRPS.equals("Scissor")||userRPS.equals("SCISSOR")||userRPS.equals("scissor"))
+    {
+    uRPS = "Sc";
+    
+    }
+    
+    else if(userRPS.equals("Lizard") || userRPS.equals("LIZARD")||userRPS.equals("lizard"))
+    {
+    uRPS = "L";
+    
+    }
+    
+    else if(userRPS.equals("Spock")||userRPS.equals("SPOCK") || userRPS.equals("spock"))
+    
+    {
+    
+    uRPS = "Sp";
+    }
+    else
+    
+    { 
+        System.out.println("wrong input");
+    }
+    
+    int cpu  = (int)(Math.random()*5+1);
+    
+    if(cpu == 1) 
+    {
+        cpuRPS = "Spock";
+    }
+    else if(cpu == 2)
+    
+    cpuRPS = "Lizards";
+    
+    else if(cpu == 3)
+    
+    cpuRPS = "Scissors";
+    
+    else if (cpu == 4) {
+        cpuRPS = "Paper";
+    }
+        
+        else  {
+            cpuRPS = "Rock";
+        }
+    
+    
+    System.out.println("You picked: "+ userRPS);
+} 
 System.out.println("The computer picked: "+ cpuRPS);
 
 if((cpuRPS == "Scissors" && uRPS == "P") 

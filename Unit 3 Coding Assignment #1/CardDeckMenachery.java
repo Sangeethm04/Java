@@ -165,11 +165,12 @@ break;
     }
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a card:");
-        String cardinput = scan.nextLine();
+        try (Scanner scan = new Scanner(System.in)) {
+            System.out.println("Enter a card:");
+            String cardinput = scan.nextLine();
 
-        CardDeckMenachery usercard = new CardDeckMenachery(cardinput);
-        System.out.println(usercard.getDescription());
+            CardDeckMenachery usercard = new CardDeckMenachery(cardinput);
+            System.out.println(usercard.getDescription());
+        }
     }
 }

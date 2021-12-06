@@ -1,3 +1,4 @@
+/*
 import java.util.Scanner;
 
 class PigLatin {
@@ -17,4 +18,5 @@ word = scan.next();
 
 }
 }
+*/
 
