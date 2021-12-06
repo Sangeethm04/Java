@@ -7,12 +7,14 @@ System.out.print ("Enter a word (end to end): ");
 String word = scan.next();
 String pigLatin;
 while (word != "end") {
-pigLatin = pl.translate(word);
+pigLatin = translate(word);
 System.out.println(pigLatin);
 System.out.print("Enter a word(end to end): ");
 word = scan.next();
 
-}
+}   
+
+
 }
 }
 
