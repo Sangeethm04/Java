@@ -35,13 +35,14 @@ public class CharactersMenachery {
     }
 
     public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-    System.out.println("Enter a string: ");
-    String inputquote = scan.nextLine();
-    System.out.println("Enter a character: ");
-    char inputletter = scan.next().charAt(0);
-    CharactersMenachery first = new CharactersMenachery(inputquote, inputletter);
-    System.out.println("The quote '" + inputquote + "' contains the letter '" + inputletter + "' " + first.findCharacter() + " time(s) at location(s): " + first.findIndex());
+    try (Scanner scan = new Scanner(System.in)) {
+        System.out.println("Enter a string: ");
+        String inputquote = scan.nextLine();
+        System.out.println("Enter a character: ");
+        char inputletter = scan.next().charAt(0);
+        CharactersMenachery first = new CharactersMenachery(inputquote, inputletter);
+        System.out.println("The quote '" + inputquote + "' contains the letter '" + inputletter + "' " + first.findCharacter() + " time(s) at location(s): " + first.findIndex());
+    }
     System.out.println();
     }
 }
