@@ -6,9 +6,11 @@ public class FunNumberMenachery {
 
 	private int original;
 	
+
+
 	/* constructs a FunNumber with value num
 	*/
-	public void FunNumberMenachery(int num)
+	public FunNumberMenachery(int num)
 	{
    		original = num;
 	}
@@ -30,7 +32,7 @@ public class FunNumberMenachery {
 	public int sumDigits()
 	{
 		int sum = 0;
-   		for(int x = 1; x < String.valueOf(original).length(); x++) {
+   		for(int x = 0; x < String.valueOf(original).length(); x++) {
 			   sum = sum + Integer.parseInt(String.valueOf(original).substring(x, x+1));
 		   } 
 		   return sum;
@@ -43,8 +45,9 @@ public class FunNumberMenachery {
 	public int sumInts()
 	{
 		int sum = 0;
-   	for(int y = 1; y < String.valueOf(original).length(); y++) {
+   	for(int y = 0; y < String.valueOf(original).length(); y++) {
 		sum += Integer.parseInt(String.valueOf(original).substring(y, y+1));
+
 	   }
 	   return sum;
 	}
@@ -56,7 +59,7 @@ public class FunNumberMenachery {
 	public int findFactorial()
 	{
    		int factorial = 1;
-		for(int b = 1; b < String.valueOf(original).length(); b++) {
+		for(int b = 1; b <= original; b++) {
 			factorial *= b;
 		}
 		return factorial;
@@ -69,22 +72,23 @@ public class FunNumberMenachery {
 	{
 
 		String factors = "";
-   		for(int i = 1; i < String.valueOf(original).length(); i++) {
+   		for(int i = 1; i <= original; i++) {
 			  if(original % i == 0) {
-				factors += i;
+				factors += i + ",";
+			  }
 			  } 
+			   System.out.println(factors);
 		   }
-		   System.out.println(factors);
-	}
+		  
  
 	
 	/* determines if this FunNumber value is prime
 	 * @return true if this value is prime, false otherwise
-	 */
+	 
  	public boolean isPrime()
 	{
-		boolean prime = true;
-		for(int i = 2; i < String.valueOf(original).length(); i++) {
+		boolean prime;
+		for(int i = 1; i <= original; i++) {
 		   if(original % i == 0) {
 			 prime = false;
 		   } else {
@@ -92,7 +96,7 @@ public class FunNumberMenachery {
 		   }
 		}
 		return prime;
-	}
+	}*/
  
 	/* returns true if this FunNumber value is a "perfect" number 
 	 * (a perfect number is a number that has a sum of proper factors equal to the value
@@ -101,20 +105,33 @@ public class FunNumberMenachery {
 	 */
     public boolean isPerfect()
 	{
-   		
-	}
+		int factors = 0;
+		for(int i = 1; i < original; i++) {
+		   if(original % i == 0) {
+			 factors += i;
+		   }
+		   } 
+		   if(factors == original) {
+			   return true;
+		   } else {
+			   return false;
+		   }
+		}
 	
  	/* returns a number that is the reverse of this FunNumber
  	 * @return reverse of this FunNumber
  	 */
-	public int reverseNum()
+	public String reverseNum()
     	{
-			int reversed;
-    		for(int i = 1; i < String.valueOf(original).length(); i++) {
-				reversed = original.Charat(i) + original;
-			}
+		int reverse = 0;
+		String newdigit = "";
+		for(int i = 0; i < String.valueOf(original).length(); i++) {
+			reverse = (int)(Integer.parseInt(String.valueOf(original).substring(i, i+1)));
+			newdigit = reverse + newdigit;
+		}
+		return newdigit;
 
-			return reversed;
+			
 	}
 
 	/* returns the value of this FunNumber
@@ -126,8 +143,8 @@ public class FunNumberMenachery {
 	}
 
     public static void main(String[] args) {
-FunNumberMenachery uno = new FunNumberMenachery();
-
+		FunNumberMenachery uno = new FunNumberMenachery(7556);
+		System.out.println(uno.getValue());
 
     }
     }
