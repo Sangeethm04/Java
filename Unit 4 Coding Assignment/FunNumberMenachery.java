@@ -84,10 +84,10 @@ public class FunNumberMenachery {
 	
 	/* determines if this FunNumber value is prime
 	 * @return true if this value is prime, false otherwise
-	 
+	 */
  	public boolean isPrime()
 	{
-		boolean prime;
+		boolean prime = true;
 		for(int i = 1; i <= original; i++) {
 		   if(original % i == 0) {
 			 prime = false;
@@ -96,7 +96,7 @@ public class FunNumberMenachery {
 		   }
 		}
 		return prime;
-	}*/
+	}
  
 	/* returns true if this FunNumber value is a "perfect" number 
 	 * (a perfect number is a number that has a sum of proper factors equal to the value
@@ -144,7 +144,7 @@ public class FunNumberMenachery {
 
     public static void main(String[] args) {
 		FunNumberMenachery uno = new FunNumberMenachery(7556);
-		System.out.println(uno.getValue());
+		System.out.println(uno.reverseNum());
 
     }
     }
