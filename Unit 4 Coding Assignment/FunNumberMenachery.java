@@ -4,7 +4,7 @@ public class FunNumberMenachery {
 	
 	/* constructs a FunNumber with value num
 	*/
-	public FunNumber(int num)
+	public void FunNumberMenachery(int num)
 	{
    		original = num;
 	}
@@ -15,7 +15,8 @@ public class FunNumberMenachery {
 	 */
 	public int numDigits()
 	{
-   		// insert code
+		int length = String.valueOf(original).length();
+		return length;
 	}
  
  
@@ -24,7 +25,11 @@ public class FunNumberMenachery {
 	 */
 	public int sumDigits()
 	{
-   		// insert code
+		int sum = 0;
+   		for(int x = 1; x < String.valueOf(original).length(); x++) {
+			   sum = sum + Integer.parseInt(String.valueOf(original).substring(x, x+1));
+		   } 
+		   return sum;
 	}
  
 	
@@ -33,7 +38,9 @@ public class FunNumberMenachery {
 	 */
 	public int sumInts()
 	{
-   	// insert code
+   	for(int y = 1; y < String.valueOf(original).length(); y++) {
+		   
+	   }
 	}
  
  
