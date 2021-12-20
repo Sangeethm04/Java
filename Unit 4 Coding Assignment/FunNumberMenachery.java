@@ -42,9 +42,11 @@ public class FunNumberMenachery {
 	 */
 	public int sumInts()
 	{
+		int sum = 0;
    	for(int y = 1; y < String.valueOf(original).length(); y++) {
-		   
+		sum += Integer.parseInt(String.valueOf(original).substring(y, y+1));
 	   }
+	   return sum;
 	}
  
  
@@ -53,14 +55,26 @@ public class FunNumberMenachery {
 	 */
 	public int findFactorial()
 	{
-   		// insert code
+   		int factorial = 1;
+		for(int b = 1; b < String.valueOf(original).length(); b++) {
+			factorial *= b;
+		}
+		return factorial;
+
 	}
 	
 	/* prints all of the factors of this FunNumber value
 	 */
 	public void printFactors()
 	{
-   		// insert code
+
+		String factors = "";
+   		for(int i = 1; i < String.valueOf(original).length(); i++) {
+			  if(original % i == 0) {
+				factors += i;
+			  } 
+		   }
+		   System.out.println(factors);
 	}
  
 	
@@ -69,7 +83,15 @@ public class FunNumberMenachery {
 	 */
  	public boolean isPrime()
 	{
-   		// insert code
+		boolean prime = true;
+		for(int i = 2; i < String.valueOf(original).length(); i++) {
+		   if(original % i == 0) {
+			 prime = false;
+		   } else {
+			   prime = true;
+		   }
+		}
+		return prime;
 	}
  
 	/* returns true if this FunNumber value is a "perfect" number 
@@ -79,7 +101,7 @@ public class FunNumberMenachery {
 	 */
     public boolean isPerfect()
 	{
-   		// insert code
+   		
 	}
 	
  	/* returns a number that is the reverse of this FunNumber
@@ -87,7 +109,12 @@ public class FunNumberMenachery {
  	 */
 	public int reverseNum()
     	{
-    		// insert code
+			int reversed;
+    		for(int i = 1; i < String.valueOf(original).length(); i++) {
+				reversed = original.Charat(i) + original;
+			}
+
+			return reversed;
 	}
 
 	/* returns the value of this FunNumber
@@ -99,6 +126,7 @@ public class FunNumberMenachery {
 	}
 
     public static void main(String[] args) {
+FunNumberMenachery uno = new FunNumberMenachery();
 
 
     }
