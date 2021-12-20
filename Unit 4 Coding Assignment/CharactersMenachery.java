@@ -1,3 +1,7 @@
+//Sangeeth Menachery
+//Exercise 4.3
+//finding num of characters in a string
+
 import java.util.Scanner;
 
 public class CharactersMenachery {

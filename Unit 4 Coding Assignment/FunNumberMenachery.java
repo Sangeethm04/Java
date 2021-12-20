@@ -1,3 +1,7 @@
+//Sangeeth Menachery
+//Exercise 4.2
+//changing numbers for sum factorial etc
+
 public class FunNumberMenachery {
 
 	private int original;
