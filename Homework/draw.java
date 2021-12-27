@@ -31,10 +31,15 @@ public void drawLine(int x1, int y1, int x2, int y2)
 */
 
 public void drawSquare(int x, int y, int len)
+{
+    if(x+len >10)
+    len = 10-x;
 
-int sumx = x + len;
-int sumy = y - len;
-{ /* to be implemented */ }
+    if(y+len >10)
+    len = 10-y;
+
+
+}
 
 public static void main(String[] args) {
 
