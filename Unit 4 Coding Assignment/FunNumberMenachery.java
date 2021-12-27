@@ -42,7 +42,7 @@ public class FunNumberMenachery {
 	/* creates a sum of the integers that are less than or equal to this FunNumber value
 	 * @return the sum of the integers <= this FunNumber value
 	 */
-	public int sumInts()
+	public int sumInts()//not working
 	{
 		int sum = 0;
    	for(int y = 0; y < String.valueOf(original).length(); y++) {
@@ -87,15 +87,13 @@ public class FunNumberMenachery {
 	 */
  	public boolean isPrime()
 	{
-		boolean prime = true;
-		for(int i = 1; i <= original; i++) {
-		   if(original % i == 0) {
-			 prime = false;
-		   } else {
-			   prime = true;
-		   }
-		}
-		return prime;
+	  
+        // Check from 2 to n-1
+        for (int i = 2; i < original; i++)
+            if (original % i == 0)
+                return false;
+  
+        return true;
 	}
  
 	/* returns true if this FunNumber value is a "perfect" number 
@@ -143,7 +141,7 @@ public class FunNumberMenachery {
 	}
 
     public static void main(String[] args) {
-		FunNumberMenachery uno = new FunNumberMenachery(7556);
+		FunNumberMenachery uno = new FunNumberMenachery(123);
 		System.out.println(uno.reverseNum());
 
     }
