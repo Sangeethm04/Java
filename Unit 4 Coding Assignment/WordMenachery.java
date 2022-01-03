@@ -48,17 +48,22 @@ public class WordMenachery {
 	 * Alternate method to determine if word is a palindrome
 	 * 
 	 * @return true if word is a palindrome, false otherwise
-	 * 
-	 * public boolean isPalindrome2()
-	 * {
-	 * // insert code
-	 * }
-	 */
+	 * */
+	  public boolean isPalindrome2()
+	  {
+	    String reverse = "";
+	    for (int i = original.length() - 1; i >= 0; i--)
+	    {
+	      reverse += original.charAt(i);
+	    }
+	    return reverse.equalsIgnoreCase(original);
+	  }
+	 
 
 	public static void main(String[] args) {
 		WordMenachery uno = new WordMenachery("Rotor");
-		System.out.println("First String: " + uno.isPalindrome());
+		System.out.println("First String: " + uno.isPalindrome2());
 		WordMenachery dos = new WordMenachery("Hello");
-		System.out.println("Second String: " + dos.isPalindrome());
+		System.out.println("Second String: " + dos.isPalindrome2());
 	}
 }
