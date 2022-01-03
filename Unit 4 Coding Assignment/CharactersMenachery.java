@@ -16,7 +16,7 @@ public class CharactersMenachery {
 
     public int findCharacter() {
         int count = 0;
-        for (int z = 1; z < Stringinput.length(); z++) {
+        for (int z = 0; z < Stringinput.length(); z++) {
             if (Stringinput.charAt(z) == letterinput) {
                 count++;
             }
@@ -26,7 +26,7 @@ public class CharactersMenachery {
     }
 
     public String findIndex() {
-        for (int b = 1; b < Stringinput.length(); b++) {
+        for (int b = 0; b < Stringinput.length(); b++) {
             if (Stringinput.charAt(b) == letterinput) {
                 indexes += b + ",";
             }
@@ -41,8 +41,8 @@ public class CharactersMenachery {
             System.out.println("Enter a character: ");
             char inputletter = scan.next().charAt(0);
             CharactersMenachery first = new CharactersMenachery(inputquote, inputletter);
-            System.out.println("The quote '" + inputquote + "' contains the letter '" + inputletter + "' "
-                    + first.findCharacter() + " time(s) at location(s): " + first.findIndex());
+            System.out.println("The quote '" + inputquote + "' contains the letter '" + inputletter + "' " +
+                first.findCharacter() + " time(s) at location(s): " + first.findIndex());
         }
         System.out.println();
     }

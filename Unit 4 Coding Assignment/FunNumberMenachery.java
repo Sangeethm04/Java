@@ -42,14 +42,13 @@ public class FunNumberMenachery {
 	 * 
 	 * @return the sum of the integers <= this FunNumber value
 	 */
-	public int sumInts()// not working
+	public int sumInts()
 	{
-		int sum = 0;
-		for (int y = 0; y < String.valueOf(original).length(); y++) {
-			sum += Integer.parseInt(String.valueOf(original).substring(y, y + 1));
-
+		int additon = 0;
+		for (int b = 1; b <= original; b++) {
+			additon += b;
 		}
-		return sum;
+		return additon;
 	}
 
 	/*
@@ -143,8 +142,15 @@ public class FunNumberMenachery {
 	}
 
 	public static void main(String[] args) {
-		FunNumberMenachery uno = new FunNumberMenachery(123);
-		System.out.println(uno.reverseNum());
-
+		FunNumberMenachery uno = new FunNumberMenachery(10);
+		System.out.println(uno.numDigits() + " a");
+		System.out.println(uno.sumDigits() + " b");
+		System.out.println(uno.sumInts() + " c");
+		System.out.println(uno.findFactorial() + " d");
+		uno.printFactors();
+		System.out.println(uno.isPrime() + " f");
+		System.out.println(uno.isPerfect() + " g");
+		System.out.println(uno.reverseNum() + " h");
+		System.out.println(uno.getValue() +" i");
 	}
 }
