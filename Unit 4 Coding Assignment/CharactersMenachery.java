@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class CharactersMenachery {
     private String Stringinput;
     private char letterinput;
-    private String indexes;
+    private String indexes = "";
 
     public CharactersMenachery(String inputquote, char inputletter) {
         Stringinput = inputquote;
