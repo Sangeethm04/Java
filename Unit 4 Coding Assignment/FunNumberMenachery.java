@@ -42,8 +42,7 @@ public class FunNumberMenachery {
 	 * 
 	 * @return the sum of the integers <= this FunNumber value
 	 */
-	public int sumInts()
-	{
+	public int sumInts() {
 		int additon = 0;
 		for (int b = 1; b <= original; b++) {
 			additon += b;
@@ -125,7 +124,7 @@ public class FunNumberMenachery {
 		int reverse = 0;
 		String newdigit = "";
 		for (int i = 0; i < String.valueOf(original).length(); i++) {
-			reverse = (int) (Integer.parseInt(String.valueOf(original).substring(i, i + 1)));
+			reverse = (int)(Integer.parseInt(String.valueOf(original).substring(i, i + 1)));
 			newdigit = reverse + newdigit;
 		}
 		return newdigit;
@@ -151,6 +150,6 @@ public class FunNumberMenachery {
 		System.out.println(uno.isPrime() + " f");
 		System.out.println(uno.isPerfect() + " g");
 		System.out.println(uno.reverseNum() + " h");
-		System.out.println(uno.getValue() +" i");
+		System.out.println(uno.getValue() + " i");
 	}
 }
