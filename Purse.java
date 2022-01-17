@@ -6,7 +6,6 @@
  * Precondition: The coins in the purse are pennies, nickels, dimes, and quarters.
  * Postcondition: The total value of the coins in the purse is returned.
  */
-
 public class Purse {
 
     public static final double QUARTER_VALUE = 0.25;
