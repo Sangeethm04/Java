@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class GuessingGame 
 {
@@ -36,3 +36,4 @@ while (guess != rand)
     System.out.println("You got it!");
   }
 }
+*/
