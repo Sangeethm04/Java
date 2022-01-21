@@ -1,9 +1,24 @@
 public class random {
-    // Write the line of code inside a constructor that assigns parameter name to instance variable name.
-    private String name;
-    
-    public random(String name) {
-        this.name = name;
-    }
 
+    public static void main(String[] args)
+    {
+        int j = 1;
+
+        while (j <= 5)
+        
+        {
+        
+        for (int k = 4; k > 1; k--)
+        
+        {
+        
+        System.out.println("ha");  // line 6
+        
+        }
+        
+        j++;
+        
+        }
+    
+    }
 }
