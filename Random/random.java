@@ -1,24 +1,20 @@
 public class random {
 
-    public static void main(String[] args)
-    {
-        int j = 1;
+    public static void main(String[] args) {
+        for (int i = 0; i > 5; i++) // Line 1
 
-        while (j <= 5)
+        {
+        
+        for (int j = 0; j < 5; j++)
         
         {
         
-        for (int k = 4; k > 1; k--)
+        int k = i + j;
         
-        {
-        
-        System.out.println("ha");  // line 6
+        System.out.print(k + " ");
         
         }
         
-        j++;
-        
         }
-    
     }
 }
