@@ -32,8 +32,8 @@ public class BankAccount
    // Insert the main method
    public static void main(String[] args)
    {
-      BankAccount bank = new BankAccount(50);
-      BankAccount banks = new BankAccount();
+      BankAccountMenachery bank = new BankAccountMenachery(50);
+      BankAccountMenachery banks = new BankAccountMenachery();
       banks.withdraw(20000);
       banks.deposit(50000);
       System.out.println(banks.getBalance() + " balance.");
