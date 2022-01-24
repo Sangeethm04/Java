@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BankAccountTesterMenachery",
+            "request": "launch",
+            "mainClass": "Chapt5.BankAccountTesterMenachery",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch BankAccountTesterMenachery",
+            "request": "launch",
+            "mainClass": "BankAccountTesterMenachery",
+            "projectName": "Java-CSA_b6bfc3a5"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
