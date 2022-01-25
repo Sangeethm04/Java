@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ShapesMenachery",
+            "request": "launch",
+            "mainClass": "Chapt5.Shapes.ShapesMenachery",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
             "name": "Launch BankAccountTesterMenachery",
             "request": "launch",
             "mainClass": "Chapt5.BankAccountTesterMenachery",

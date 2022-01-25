@@ -1,5 +1,3 @@
-package Chapt5.Shapes;
-
 public class ShapesMenachery {
         public static void main(String[] args) {
           Rectangle r1 = new Rectangle(10, 6);
@@ -19,7 +17,7 @@ public class ShapesMenachery {
         public double getWidth() { return width; }
       
         public void setLength(double newLength) { length = newLength; }
-      
+    
         public void setWidth(double newWidth) { width = newWidth; }
       
         public String toString() {
@@ -28,7 +26,7 @@ public class ShapesMenachery {
       
       
         //calculates the area of the rectangle
-          
+
         //calculate the perimeter of the rectangle
       
       
