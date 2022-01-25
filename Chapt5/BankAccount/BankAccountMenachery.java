@@ -1,4 +1,4 @@
-package Chapt5;
+package Chapt5.BankAccount;
 
 /**
  * BankAccountMenachery.java
@@ -15,9 +15,9 @@ public class BankAccountMenachery {
     private double balance; // keeps track of the balance
 
     public BankAccountMenachery() {
-        name = ""; // sets the name to an empty string
-        accountNumber = "00000"; // sets the account number to a default value
-        balance = 0.0; // sets the balance to 0.0
+        name = ""; 
+        accountNumber = "00000";
+        balance = 0.0; 
     }
 
     public BankAccountMenachery(String name, String accountNumber, double balance) {
