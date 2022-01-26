@@ -33,34 +33,33 @@ public class ShapesMenachery {
             System.out.println("The area of the rectangle is " + area);
           }
         //calculate the perimeter of the rectangle
-          public void perimeter() {
+          public String perimeter() {
             double perimeter = 2 * (length + width);
-            System.out.println("The perimeter of the rectangle is " + perimeter);
+            return "The perimeter of the rectangle is " + perimeter;
           }
       
         //calculate the length of the diagonal of the rectangle
-          public void diagonal() {
+          public String diagonal() {
             double diagonal = Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2));
-            System.out.println("The length of the diagonal of the rectangle is " + diagonal);
+            return "The length of the diagonal of the rectangle is " + diagonal;
           }
       
         //scale the rectangle
-          public void scale(double scaleFactor) {
+          public String scale(double scaleFactor) {
             length = length * scaleFactor;
             width = width * scaleFactor;
-            System.out.println("The new length of the rectangle is " + length);
-            System.out.println("The new width of the rectangle is " + width);
+           return "The new length of the rectangle is " + length + " and the new width is " + width;
           }
       
         //scale the rectangle horizontally
-          public void scaleHorizontally(double scaleFactor) {
+          public String scaleHorizontally(double scaleFactor) {
             width = width * scaleFactor;
-            System.out.println("The new width of the rectangle is " + width);
+            return "The new width of the rectangle is " + width;
           }
       
         //scale the rectangle vertically
-          public void scaleVertically(double scaleFactor) {
+          public String  scaleVertically(double scaleFactor) {
             length = length * scaleFactor;
-            System.out.println("The new length of the rectangle is " + length);
+            return "The new length of the rectangle is " + length;
           }
       }

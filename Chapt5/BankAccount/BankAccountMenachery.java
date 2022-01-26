@@ -15,15 +15,12 @@ public class BankAccountMenachery {
     private double balance; // keeps track of the balance
 
     /**
-     * Constructor for the BankAccountMenachery class.
-     * @param name the name of the account holder
-     * @param accountNumber the account number
-     * @param balance the balance of the account
+     * Constructor
      */
     public BankAccountMenachery() {
-        name = ""; 
-        accountNumber = "00000";
-        balance = 0.0; 
+        name = ""; //name is set to empty string
+        accountNumber = "00000"; //account is set to 0000000
+        balance = 0.0; //balance is set to 0.0
     }
     /**
      * Constructor for the BankAccountMenachery class.
