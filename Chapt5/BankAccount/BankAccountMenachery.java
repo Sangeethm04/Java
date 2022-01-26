@@ -14,12 +14,23 @@ public class BankAccountMenachery {
     private String accountNumber; // keeps track of the account number
     private double balance; // keeps track of the balance
 
+    /**
+     * Constructor for the BankAccountMenachery class.
+     * @param name the name of the account holder
+     * @param accountNumber the account number
+     * @param balance the balance of the account
+     */
     public BankAccountMenachery() {
         name = ""; 
         accountNumber = "00000";
         balance = 0.0; 
     }
-
+    /**
+     * Constructor for the BankAccountMenachery class.
+     * @param name the name of the account holder
+     * @param accountNumber the account number
+     * @param balance the balance of the account
+     */
     public BankAccountMenachery(String name, String accountNumber, double balance) {
         this.name = name; // sets the name to the parameter
         this.accountNumber = accountNumber; // sets the account number to the parameter
