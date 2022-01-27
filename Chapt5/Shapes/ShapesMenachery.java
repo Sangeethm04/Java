@@ -3,6 +3,7 @@ package Chapt5.Shapes;
 public class ShapesMenachery {
         public static void main(String[] args) {
           Rectangle r1 = new Rectangle(10, 6);
+          r1.draw();
         }
       }
       
@@ -61,5 +62,15 @@ public class ShapesMenachery {
           public String  scaleVertically(double scaleFactor) {
             length = length * scaleFactor;
             return "The new length of the rectangle is " + length;
+          }
+
+          // Create a method that prints out a “drawing” of the rectangle using asterisks
+          public void draw() {
+            for (int i = 0; i < length; i++) {
+              for (int j = 0; j < width; j++) {
+                System.out.print("*");
+              }
+              System.out.println();
+            }
           }
       }
