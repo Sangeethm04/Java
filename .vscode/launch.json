@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch factorial",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
+            "name": "Launch random",
+            "request": "launch",
+            "mainClass": "random",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
             "name": "Launch ShapesMenachery",
             "request": "launch",
             "mainClass": "Chapt5.Shapes.ShapesMenachery",
