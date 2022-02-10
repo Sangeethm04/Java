@@ -1,18 +1,3 @@
-// Create a PersonMenachery class that will construct a PersonMenachery object who receives mail.  The objects should have 5 instance variables: name, street, city, state, and zip.  Create one constructor for all five instance variables.  Keep track of how many objects are constructed.  Create two accessor methods to access the name of the PersonMenachery object and how many objects have been created.  Create four mutator methods to change any of the four parts of a PersonMenachery object’s address.  Replace the usual toString method with a method that will print the address as it would appear on an envelope.  See example below.
-
-// 	Example Mailing Address
-// 	Walt Disney
-// 	1180 Seven Seas Drive
-// Lake Buena Vista, FL  32836
-
-// Create a PersonMenacheryTester class to do the following in this order.
-// Construct an object
-// Print the mailing address
-// Test your six other methods
-// Print the mailing address again
-// Construct a few more objects
-// Print the number of objects constructed
-
 /**
  * @author Sangeeth Menachery
  * @Since 2/8/2022
@@ -27,6 +12,14 @@ public class PersonMenachery {
     private String zip;
     private static int numObjects;
 
+    /**
+     * Constructor for the PersonMenachery class
+     * @param name
+     * @param street
+     * @param city
+     * @param state
+     * @param zip
+     */
     public PersonMenachery(String name, String street, String city, String state, String zip) {
         this.name = name;
         this.street = street;
@@ -36,47 +29,78 @@ public class PersonMenachery {
         numObjects++;
     }
 
-    public void setState(String name) {
-        this.name = name;
+    /**
+     * sets the state to the value of state
+     * @param state
+     */
+    public void setState(String state) {
+        this.state = state;
     }
 
+    /**
+     * sets the street to the value of street
+     * @param street
+     */
     public void setStreet(String street) {
         this.street = street;
     }
 
-
+    /**
+     * sets the city to the value of city
+     * @param city
+     */
     public void setCity(String city) {
         this.city = city;
     }
 
+    /**
+     * sets the zip to the value of zip
+     * @param zip
+     */
     public void setZip(String zip) {
         this.zip = zip;
     }
 
+    /**
+     * return the name value
+     * @return name value returned
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * return the num of objects created
+     * @return numObjects value returned
+     */
     public String getObjects() {
         return "Objects created: " + PersonMenachery.numObjects;
     }
 
+    /**
+     * return the street value
+     * @return street value returned
+     */
     public String printAddressString() {
         return "Address is: \n" + name + "\n" + street + "\n" + city + ", " + state + " " + zip;
     }
 
+    /**
+     * Main Method
+     * @param args
+     */
     public static void main(String[] args) {
-        PersonMenachery PersonMenachery = new PersonMenachery("Walt Disney", "1180 Seven Seas Drive", "Lake Buena Vista", "FL", "32836");
-        System.out.println(PersonMenachery.printAddressString());
-        System.out.println(PersonMenachery.getObjects());
-        System.out.println(PersonMenachery.getName());
-        PersonMenachery.setZip("32837");
-        PersonMenachery.setState("FL");
-        PersonMenachery.setCity("Washington DC");
-        PersonMenachery.setStreet("1234 Main Street");
-        System.out.println(PersonMenachery.printAddressString());
+        PersonMenachery PersonMenachery4 = new PersonMenachery("Walt Disney", "1180 Seven Seas", "Lake Tahoe", "FL", "32836");
+        System.out.println(PersonMenachery4.printAddressString());
+        System.out.println(PersonMenachery4.getObjects());
+        System.out.println(PersonMenachery4.getName());
+        PersonMenachery4.setZip("32837");
+        PersonMenachery4.setState("FL");
+        PersonMenachery4.setCity("Washington DC");
+        PersonMenachery4.setStreet("1234 Main Street");
+        System.out.println(PersonMenachery4.printAddressString());
         PersonMenachery PersonMenachery2 = new PersonMenachery("Sangeeth Menachery", "1600 Pennsylvania AVE NW", "Washington D.C.", "Washington D.C.", "000000");
-        PersonMenachery PersonMenachery3 = new PersonMenachery("Walt Disney", "1180 Seven Seas Drive", "Lake Buena Vista", "FL", "32836");
+        PersonMenachery PersonMenachery3 = new PersonMenachery("Walt Disney", "1180 Seven Seas Drive", "Bob's", "FL", "32836");
         System.out.println(PersonMenachery3.printAddressString());
         System.out.println(PersonMenachery3.getObjects());
     }

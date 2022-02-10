@@ -1,8 +1,16 @@
-
-
+/**
+ * @author Sangeeth Menachery
+ * @since 2/08/22
+ * Precondition: The user inputs a non-negative integer for the length of the sides
+ * Postcondition: Outputs the perimeter and area of the triangle and checks for correct triangles and scales
+ */
 public class TriangleTesterMenachery {
+
+    /**
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
-        TriangleMenachery unoTriangle = new TriangleMenachery(2, 2, 4);
+        TriangleMenachery unoTriangle = new TriangleMenachery(2, 3, 4);
         System.out.println(unoTriangle.toString());
         System.out.println(unoTriangle.PrintPerimeter());
         System.out.println(unoTriangle.PrintArea());
