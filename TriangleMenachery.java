@@ -1,12 +1,7 @@
-// Create a Triangle class that will construct a Triangle object.  The Triangle objects should have three instance variables for the lengths of their three sides.  Create one constructor for all three instance variables.  Keep track of how many objects are constructed.  Create one accessor method to access how many objects have been created.  Create a toString method, a method that will return the object’s perimeter, a method that will return the object's area, and a method that will take in a scale parameter to scale all three sides of the triangle and print a statement showing the new triangles perimeter and area.
-
-// Create a TriangleTester class to do the following in this order.
-// Construct a triangle and use the toString method.
-// Print the perimeter and area
-// Scale the triangle and print the new perimeter and area
-// Construct a few more objects
-// Print the number of objects constructed
-
+/**
+ * @author Sangeeth Menachery
+ * @since 
+ */
 
 public class TriangleMenachery {
     private double length1;
@@ -19,6 +14,20 @@ public class TriangleMenachery {
         this.length2 = length2;
         this.length3 = length3;
         objectnum++;
+        if(!isTriangle()) {
+            this.length1 = 0;
+        this.length2 = 0;
+        this.length3 = 0;
+        }
+    }
+
+    public boolean isTriangle() {
+        if(length1 + length2 > length3 && length1 + length3 > length2 && length2 + length3 > length1) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public String PrintPerimeter() {
@@ -44,4 +53,6 @@ public class TriangleMenachery {
     public String toString() {
         return "Triangle: " + length1 + ", " + length2 + ", " + length3;
     }
+
+
 }
