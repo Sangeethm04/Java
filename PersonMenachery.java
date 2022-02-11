@@ -73,7 +73,7 @@ public class PersonMenachery {
      * return the num of objects created
      * @return numObjects value returned
      */
-    public String getObjects() {
+    public static String getObjects() {
         return "Objects created: " + PersonMenachery.numObjects;
     }
 
@@ -83,25 +83,5 @@ public class PersonMenachery {
      */
     public String printAddressString() {
         return "Address is: \n" + name + "\n" + street + "\n" + city + ", " + state + " " + zip;
-    }
-
-    /**
-     * Main Method
-     * @param args
-     */
-    public static void main(String[] args) {
-        PersonMenachery PersonMenachery4 = new PersonMenachery("Walt Disney", "1180 Seven Seas", "Lake Tahoe", "FL", "32836");
-        System.out.println(PersonMenachery4.printAddressString());
-        System.out.println(PersonMenachery4.getObjects());
-        System.out.println(PersonMenachery4.getName());
-        PersonMenachery4.setZip("32837");
-        PersonMenachery4.setState("FL");
-        PersonMenachery4.setCity("Washington DC");
-        PersonMenachery4.setStreet("1234 Main Street");
-        System.out.println(PersonMenachery4.printAddressString());
-        PersonMenachery PersonMenachery2 = new PersonMenachery("Sangeeth Menachery", "1600 Pennsylvania AVE NW", "Washington D.C.", "Washington D.C.", "000000");
-        PersonMenachery PersonMenachery3 = new PersonMenachery("Walt Disney", "1180 Seven Seas Drive", "Bob's", "FL", "32836");
-        System.out.println(PersonMenachery3.printAddressString());
-        System.out.println(PersonMenachery3.getObjects());
     }
 }
