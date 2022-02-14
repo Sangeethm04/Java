@@ -31,34 +31,34 @@ public class PersonMenachery {
 
     /**
      * sets the state to the value of state
-     * @param state
+     * @param state the state to set
      */
     public void setState(String state) {
-        this.state = state;
+        this.state = state; //sets state to state value
     }
 
     /**
      * sets the street to the value of street
-     * @param street
+     * @param street the street to set
      */
     public void setStreet(String street) {
-        this.street = street;
+        this.street = street; //sets the street to the value of street
     }
 
     /**
      * sets the city to the value of city
-     * @param city
+     * @param city the city to set
      */
     public void setCity(String city) {
-        this.city = city;
+        this.city = city;  //sets the city to the value of city
     }
 
     /**
      * sets the zip to the value of zip
-     * @param zip
+     * @param zip the zip to set
      */
     public void setZip(String zip) {
-        this.zip = zip;
+        this.zip = zip; //sets the zip to the value of zip
     }
 
     /**
@@ -66,7 +66,7 @@ public class PersonMenachery {
      * @return name value returned
      */
     public String getName() {
-        return name;
+        return name; //returns the name value
     }
 
     /**
@@ -74,7 +74,7 @@ public class PersonMenachery {
      * @return numObjects value returned
      */
     public static String getObjects() {
-        return "Objects created: " + PersonMenachery.numObjects;
+        return "Objects created: " + PersonMenachery.numObjects; //returns the number of objects created
     }
 
     /**

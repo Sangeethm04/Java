@@ -46,7 +46,7 @@ public class TriangleMenachery {
      * @return the perimeter of the triangle
      */
     public String PrintPerimeter() {
-        return "Perimeter: " + (length1 + length2 + length3);
+        return "Perimeter: " + (length1 + length2 + length3); // return the perimeter of the triangle
     }
 
     /**
@@ -54,8 +54,8 @@ public class TriangleMenachery {
      * @return the area of the triangle
      */
     public String PrintArea() {
-        double s = (length1 + length2 + length3) / 2;
-        return "Area: " + Math.sqrt(s * (s - length1) * (s - length2) * (s - length3));
+        double s = (length1 + length2 + length3) / 2; // calculate the semiperimeter
+        return "Area: " + Math.sqrt(s * (s - length1) * (s - length2) * (s - length3)); //calculate area and return it
     }
 
     /**
@@ -63,17 +63,20 @@ public class TriangleMenachery {
      * @param scale the scale to be multiplied by the object lengths
      */
     public void PrintScale(double scale) {
+        length1 *= scale;
+        length2 *= scale;
+        length3 *= scale;
         System.out.println("Scaled Triangle: ");
-        System.out.println("Length 1: " + (length1 * scale));
-        System.out.println("Length 2: " + (length2 * scale));
-        System.out.println("Length 3: " + (length3 * scale));
+        System.out.println("Length 1: " + (length1));
+        System.out.println("Length 2: " + (length2));
+        System.out.println("Length 3: " + (length3));
     }
 
     /**
      * Returns the number of objects created
      * @return the number of objects created
      */
-    public String numObjectsPrinted() {
+    public static String numObjectsPrinted() {
         return "Number of objects created: " + TriangleMenachery.objectnum;
     }
 
