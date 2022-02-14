@@ -6,28 +6,31 @@
     "configurations": [
         {
             "type": "java",
-<<<<<<< Updated upstream
-            "name": "Launch factorial",
+            "name": "Launch PersonMenacheryTester",
             "request": "launch",
-            "mainClass": "factorial",
-            "projectName": "Java_a7821086"
-=======
+            "mainClass": "PersonMenacheryTester",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TriangleTesterMenachery",
+            "request": "launch",
+            "mainClass": "TriangleTesterMenachery",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch Song",
             "request": "launch",
             "mainClass": "Song",
             "projectName": "Java-CSA_e58f39d5"
->>>>>>> Stashed changes
         },
         {
             "type": "java",
             "name": "Launch random",
             "request": "launch",
             "mainClass": "random",
-<<<<<<< Updated upstream
-            "projectName": "Java_a7821086"
-=======
             "projectName": "Java-CSA_e58f39d5"
->>>>>>> Stashed changes
         },
         {
             "type": "java",
