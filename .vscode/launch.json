@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Rand",
+            "request": "launch",
+            "mainClass": "Rand",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
             "name": "Launch Countries",
             "request": "launch",
             "mainClass": "Countries",

@@ -33,6 +33,10 @@ public class Countries
    {
      String baseURL = "https://raw.githubusercontent.com/bhoffman0/CSAwesome/master/_sources/Unit6-Arrays/6-1-images/";
      System.out.print("<img src=" + baseURL + filename + ">");
+
+          /*Create an array called day2 that will hold 7 String elements. Those elements are: "Sun","Mon","Tue","Wed","Thu","Fri","Sat"*/
+
+
    }
   }
   
