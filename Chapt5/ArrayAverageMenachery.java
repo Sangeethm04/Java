@@ -1,3 +1,5 @@
+package Chapt5;
+
 //Sangeeth Menachery
 //6.2 - ArrayAverage
 //Create the array avg system

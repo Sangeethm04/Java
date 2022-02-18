@@ -1,3 +1,4 @@
+package Chapt5;
 // Sangeeth Menachery
 // 6.2 - AverageArray & FortuneTeller
 // fortuneteller Jframe
