@@ -1,27 +1,38 @@
 public class Rand {
     public static void main(String[] args) {
-        double[] scores = {1.0, 2.0, 3.0, 4.0, 5.0};
+        String[] uno = {
+            "hola",
+            "hola1",
+            "hola2",
+            "hola3"
+        };
+        int[] dos = {
+            1,
+            2,
+            3,
+            4
+        };
+        double[] tres = {
+            1.1,
+            2.2,
+            3.3,
+            4.4
+        };
 
-        int index = 0;
+        for (String vals: uno) {
+            System.out.println(vals.toUpperCase());
+        }
 
-        System.out.println(scores[0]);
-        System.out.println(scores[1]);
-        System.out.println(scores[2]);
-        System.out.println(scores[3]);
-        System.out.println(scores[4]);
+        for (int valss: dos) {
+            int sum = 0;
+            sum += valss;
 
-        System.out.println(scores[index]);
-        index++;
-        System.out.println(scores[index]);
-        index++;
-        System.out.println(scores[index]);
-        index++;
-        System.out.println(scores[index]);
-        index++;
-        System.out.println(scores[index]);
+            System.out.println(sum);
+        }
 
-        for(int i = 0; i < scores.length; i++) {
-            System.out.println(scores[i]);
+        for (double valsss: tres) {
+            System.out.println(valsss / 10.0);
         }
     }
+
 }
