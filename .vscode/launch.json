@@ -9,6 +9,13 @@
             "name": "Launch Rand",
             "request": "launch",
             "mainClass": "Rand",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rand",
+            "request": "launch",
+            "mainClass": "Rand",
             "projectName": "Java_a7821086"
         },
         {

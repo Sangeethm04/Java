@@ -17,8 +17,8 @@ public class TriangleTesterMenachery {
         unoTriangle.PrintScale(2);
         System.out.println(unoTriangle.PrintPerimeter());
         System.out.println(unoTriangle.PrintArea());
-        TriangleMenachery dosTriangle = new TriangleMenachery(4, 6, 8);
-        TriangleMenachery tresTriangle = new TriangleMenachery(8, 12, 16);
+        //TriangleMenachery dosTriangle = new TriangleMenachery(4, 6, 8);
+       // TriangleMenachery tresTriangle = new TriangleMenachery(8, 12, 16);
         System.out.println(TriangleMenachery.numObjectsPrinted());
     }
 }
