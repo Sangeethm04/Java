@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayAssignmentMenachery",
+            "request": "launch",
+            "mainClass": "ArrayAssignmentMenachery",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayAssignmentMenachery",
             "request": "launch",
             "mainClass": "ArrayAssignmentMenachery",
