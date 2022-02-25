@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayAssignmentMenachery",
+            "request": "launch",
+            "mainClass": "ArrayAssignmentMenachery",
+            "projectName": "Java-CSA_3aa90337"
+        },
+        {
+            "type": "java",
             "name": "Launch Rand",
             "request": "launch",
             "mainClass": "Rand",
