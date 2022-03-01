@@ -24,4 +24,26 @@ public class ArrayAverageMenachery {
         }
 
     }
+
+    public char[] findMax() {
+        return null;
+    }
+
+    public char[] findNumber(int i) {
+        return null;
+    }
+
+    public char[] findAvergage() {
+        return null;
+    }
+
+    public void swap(int i, int j) {
+    }
+
+    public char[] reverse() {
+        return null;
+    }
+
+    public void numericOrder() {
+    }
 }
