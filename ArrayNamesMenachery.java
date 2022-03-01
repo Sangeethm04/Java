@@ -1,8 +1,9 @@
 //Sangeeth Menachery
-//
+//6.2 Exercise
+//User array and do stuff with it
 
 
-public class ArrayNames {
+public class ArrayNamesMenachery {
     public static void main(String[] args) {
         String[] names = {
             "Sangeeth Menachery",
