@@ -2,14 +2,25 @@
 //Exercise 6.1
 //Use array and its values for functions
 
+
 public class ArrayAssignmentMenachery {
-    private static int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};; 
-    String[] arr = {"Hello", "World", "!"};
-    public int findNumber(String word) {
+    private static int[] array = {
+        2,
+        2,
+        6,
+        4,
+        1,
+        6,
+        7,
+        8,
+        9,
+        10
+    };;
+    public int findNumber(int number) {
         int count = 0;
 
-        for(String x : arr) {
-            if(x.equals(word)) {
+        for (int x: array) {
+            if (x == number) {
                 count++;
             }
         }
@@ -18,8 +29,8 @@ public class ArrayAssignmentMenachery {
 
     public int findMax() {
         int largest = 0;
-        for(int x : array) {
-            if(x > largest) {
+        for (int x: array) {
+            if (x > largest) {
                 largest = x;
             }
         }
@@ -27,10 +38,9 @@ public class ArrayAssignmentMenachery {
     }
 
     public int findMin() {
-        int smallest = 0;
-        int[] arr = {0, 1, 2, 3, 4, 5};
-        for(int x : arr) {
-            if(x < smallest) {
+        int smallest = array[0];
+        for (int x: array) {
+            if (x < smallest) {
                 smallest = x;
             }
         }
@@ -40,7 +50,7 @@ public class ArrayAssignmentMenachery {
     public Double findAvergage() {
         int sum = 0;
         double avg = 0;
-        for(int x : array) {
+        for (int x: array) {
             sum += x;
         }
         avg = sum / array.length;
@@ -55,38 +65,26 @@ public class ArrayAssignmentMenachery {
 
     public String reverse() {
         String result = "";
-        for(int i = array.length - 1; i >= 0; i--) {
+        for (int i = array.length - 1; i >= 0; i--) {
             result += array[i] + ", ";
         }
         return result;
     }
 
     public void numericOrder() {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for(int i = 0; i < arr.length; i++) {
-            for(int j = i + 1; j < arr.length; j++) {
-                if(arr[i] > arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] > array[j]) {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
                 }
             }
         }
-        for(int x : arr) {
+
+        for (int x: array) {
             System.out.print(x + " ");
         }
     }
 
-
-    public static void main(String[] args) {
-        ArrayAssignmentMenachery a = new ArrayAssignmentMenachery();
-        System.out.println(a.findNumber("Hello"));
-        System.out.println(a.findMax());
-        System.out.println(a.findMin());
-        System.out.println(a.findAvergage());
-        a.swap(0, 1);
-        System.out.println(a.reverse());
-        a.numericOrder();
-       System.out.println("Hello");
-    }
 }
