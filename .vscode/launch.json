@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayNames",
+            "request": "launch",
+            "mainClass": "ArrayNames",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayAssignmentMenachery",
             "request": "launch",
             "mainClass": "ArrayAssignmentMenachery",
