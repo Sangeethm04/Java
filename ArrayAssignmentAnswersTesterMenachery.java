@@ -6,7 +6,7 @@ public class ArrayAssignmentAnswersTesterMenachery {
         System.out.println(a.findMax());
         System.out.println(a.findAvergage());
         a.swap(0, 1);
-        a.reverse();
+        System.out.println(a.reverse());
         a.numericOrder();
     }
 }

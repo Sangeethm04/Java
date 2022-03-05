@@ -2,9 +2,6 @@
 //Exercise 6.1
 //Use array and its values for functions
 
-// The reverse method will reverse the order of the array by doing multiple swap method calls, then returns the values in the array as a string, separated by commas.  For example, the array {1, 2, 3, 4, 5} would be returned as 
-// "5, 4, 3, 2, 1" (no quotation marks).
-
 
 public class ArrayAssignmentMenachery {
     private static int[] array = {
@@ -71,15 +68,11 @@ public class ArrayAssignmentMenachery {
             swap(i, array.length - 1 - i);
         }
 
-        String result = "hello ";
+        String result = "";
         for (int x: array) {
             result += x + ", ";
         }
         return result;
-
-
-
-       
     }
 
     public void numericOrder() {
