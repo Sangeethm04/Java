@@ -2,8 +2,11 @@
 //Exercise 6.1
 //Use array and its values for functions
 
+<<<<<<< HEAD:Unit 6 Coding Assignment/ArrayAssignmentMenachery.java
 
 import java.util.Arrays;  
+=======
+>>>>>>> 5e68c779f73230f25b96f47ee0551212330f6948:ArrayAssignmentMenachery.java
 
 public class ArrayAssignmentMenachery {
     public static int[] array = {
@@ -71,12 +74,21 @@ public class ArrayAssignmentMenachery {
         for (int i = 0; i < array.length; i++) {
             swap(i, array.length - 1 - i);
         }
+<<<<<<< HEAD:Unit 6 Coding Assignment/ArrayAssignmentMenachery.java
         for (int x: array) {
             result += x + ", ";
 
         }
         System.out.println(result);
 
+=======
+
+        String result = "";
+        for (int x: array) {
+            result += x + ", ";
+        }
+        return result;
+>>>>>>> 5e68c779f73230f25b96f47ee0551212330f6948:ArrayAssignmentMenachery.java
     }
 
     public void numericOrder() {
