@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch WordPairsList",
+            "request": "launch",
+            "mainClass": "Chapt6.WordPairsList",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch WordPairsList",
+            "request": "launch",
+            "mainClass": "WordPairsList",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayAssignmentAnswersTesterMenachery",
             "request": "launch",
             "mainClass": "ArrayAssignmentAnswersTesterMenachery",
