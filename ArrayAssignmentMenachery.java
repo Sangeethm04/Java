@@ -2,12 +2,11 @@
 //Exercise 6.1
 //Use array and its values for functions
 
-// The reverse method will reverse the order of the array by doing multiple swap method calls, then returns the values in the array as a string, separated by commas.  For example, the array {1, 2, 3, 4, 5} would be returned as 
-// "5, 4, 3, 2, 1" (no quotation marks).
 
+import java.util.Arrays;  
 
 public class ArrayAssignmentMenachery {
-    private static int[] array = {
+    public static int[] array = {
         2,
         2,
         6,
@@ -18,7 +17,7 @@ public class ArrayAssignmentMenachery {
         8,
         9,
         10
-    };;
+    };
     public int findNumber(int number) {
         int count = 0;
 
@@ -66,20 +65,18 @@ public class ArrayAssignmentMenachery {
         array[b] = temp;
     }
 
-    public String reverse() {
-        for (int i = 0; i < array.length / 2; i++) {
+    public void reverse() {
+        String result = "";
+        
+        for (int i = 0; i < array.length; i++) {
             swap(i, array.length - 1 - i);
         }
-
-        String result = "hello ";
         for (int x: array) {
             result += x + ", ";
+
         }
-        return result;
+        System.out.println(result);
 
-
-
-       
     }
 
     public void numericOrder() {
@@ -94,7 +91,7 @@ public class ArrayAssignmentMenachery {
         }
 
         for (int x: array) {
-            System.out.print(x + " ");
+            System.out.print(x + ", ");
         }
     }
 
