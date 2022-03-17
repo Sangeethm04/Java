@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch UserName",
+            "request": "launch",
+            "mainClass": "UserName",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch WordPairsList",
             "request": "launch",
             "mainClass": "Chapt6.WordPairsList",
