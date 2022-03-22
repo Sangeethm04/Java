@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CookieTester",
+            "request": "launch",
+            "mainClass": "CookieTester",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch CookieTesterSolution",
+            "request": "launch",
+            "mainClass": "CookieTesterSolution",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch Picture",
             "request": "launch",
             "mainClass": "Picture",
