@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CollegeTesterSolution",
+            "request": "launch",
+            "mainClass": "CollegeTesterSolution",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
             "name": "Launch CookieTester",
             "request": "launch",
             "mainClass": "CookieTester",
