@@ -10,11 +10,12 @@ public class College {
       @ param
       @ param
    */
-   public College() {
-      name = "";
-      region = "";
-      tuition = 0;     
+   public College(String name, String region, int tuition) {
+      this.name = name;
+      this.region = region;
+      this.tuition = tuition;
    }
+         
 
    /**
    @return the college name
