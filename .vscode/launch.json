@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SearchMenachery",
+            "request": "launch",
+            "mainClass": "SearchMenachery",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
             "name": "Launch CollegeTesterSolution",
             "request": "launch",
             "mainClass": "CollegeTesterSolution",
