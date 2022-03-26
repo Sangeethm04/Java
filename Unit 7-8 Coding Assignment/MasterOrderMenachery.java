@@ -1,16 +1,20 @@
+// Sangeeth Menachery
+// Exercise 7.1
+// Coookies
+
 import java.util.List;
 import java.util.ArrayList;
-public class MasterOrder {
-    private List < CookieOrder > orders;
-    public MasterOrder() {
-        orders = new ArrayList < CookieOrder > ();
+public class MasterOrderMenachery {
+    private List < CookieOrderMenachery > orders;
+    public MasterOrderMenachery() {
+        orders = new ArrayList < CookieOrderMenachery > ();
     }
-    public void addOrder(CookieOrder theOrder) {
+    public void addOrder(CookieOrderMenachery theOrder) {
         orders.add(theOrder);
     }
     public int getTotalBoxes() {
         int totalBoxes = 0;
-        for (CookieOrder order: orders) {
+        for (CookieOrderMenachery order: orders) {
             totalBoxes = order.getNumBoxes();
         }
         return totalBoxes;
@@ -28,7 +32,7 @@ public class MasterOrder {
     }
     public String toString() {
         String result = "";
-        for (CookieOrder order: orders) {
+        for (CookieOrderMenachery order: orders) {
             result = order.toString() + "\n";
         }
         return result;

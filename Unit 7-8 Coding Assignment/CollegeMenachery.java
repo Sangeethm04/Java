@@ -1,6 +1,8 @@
-/**
- */
-public class College {
+// Sangeeth Menachery
+// Exercise 7.2
+// College upodates
+
+public class CollegeMenachery {
    private String name;
    private String region;
    private int tuition;
@@ -10,12 +12,12 @@ public class College {
       @ param
       @ param
    */
-   public College(String name, String region, int tuition) {
+   public CollegeMenachery(String name, String region, int tuition) {
       this.name = name;
       this.region = region;
       this.tuition = tuition;
    }
-         
+
 
    /**
    @return the college name

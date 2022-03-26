@@ -1,11 +1,11 @@
-public class CookieOrder {
+public class CookieOrderMenachery {
   /* Instance variables go here.*/
   private String variety;
   private int boxes;
 
 
   /** Constructs a new CookieOrder object. */
-  public CookieOrder(String variety, int numBoxes) {
+  public CookieOrderMenachery(String variety, int numBoxes) {
     this.variety = variety;
     this.boxes = numBoxes;
   }

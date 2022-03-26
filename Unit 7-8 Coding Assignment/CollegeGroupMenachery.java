@@ -1,16 +1,16 @@
-/**
- */
+// Sangeeth Menachery
+// Exercise 7.2
+// College upodates
 
-import java.util.List;
 import java.util.ArrayList;
 
-public class CollegeGroup {
-   private ArrayList < College > myColleges;
+public class CollegeGroupMenachery {
+   private ArrayList < CollegeMenachery > myColleges;
 
    /**
    @param
    */
-   public CollegeGroup(ArrayList < College > colleges) {
+   public CollegeGroupMenachery(ArrayList < CollegeMenachery > colleges) {
       myColleges = colleges;
    }
 
@@ -19,7 +19,7 @@ public class CollegeGroup {
    @param
    */
    public void updateTuition(String collegeName, int newTuition) {
-      for (College c: myColleges) {
+      for (CollegeMenachery c: myColleges) {
          if (c.getName().equals(collegeName)) {
             c.setTuition(newTuition);
          }
@@ -31,9 +31,9 @@ public class CollegeGroup {
    @param
    @param
    */
-   public ArrayList < College > getCollegeList(String region, int low, int high) {
-      ArrayList < College > criteria = new ArrayList < College > ();
-      for (College c: myColleges) {
+   public ArrayList < CollegeMenachery > getCollegeList(String region, int low, int high) {
+      ArrayList < CollegeMenachery > criteria = new ArrayList < CollegeMenachery > ();
+      for (CollegeMenachery c: myColleges) {
          if (c.getRegion().equals(region) && c.getTuition() >= low && c.getTuition() <= high) {
             criteria.add(c);
          }
@@ -44,7 +44,7 @@ public class CollegeGroup {
    /**
     */
    public void printColleges() {
-      for (College c: myColleges) {
+      for (CollegeMenachery c: myColleges) {
          System.out.println(c.getName() + " - " + c.getRegion() + " - " + c.getTuition());
       }
    }
