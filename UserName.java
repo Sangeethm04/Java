@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 public class UserName {
@@ -33,7 +32,10 @@ public class UserName {
     public static void main(String[] args) {
         UserName person = new UserName("john", "smith");
         System.out.println(person.possibleNames);
-        String[] arr = {"smithjo", "johnsmith1"};
+        String[] arr = {
+            "smithjo",
+            "johnsmith1"
+        };
         person.setAvailableUserNames(arr);
         System.out.println(person.possibleNames);
 
