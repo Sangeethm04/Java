@@ -22,7 +22,7 @@ public class UserName {
     }
 
     public void setAvailableUserNames(String[] usedNames) {
-        for (String ars: usedNames) {
+        for (String ars: possibleNames) {
             if (isUsed(ars, usedNames)) {
                 possibleNames.remove(ars);
             }

@@ -4,10 +4,12 @@
 
 public class SearchMenachery {
     int[] nums = {
-        10,
+        4,
         20,
         30,
-        40
+        49,
+        40,
+
     };
 
     public String seqsearch(int findNum) {
@@ -18,17 +20,39 @@ public class SearchMenachery {
         }
         return "Item not found | -1";
     }
+
+    public void selectionsort() {
+        int min;
+        for (int i = 0; i < nums.length - 1; i++) {
+            min = i;
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] < nums[min]) {
+                    min = j;
+                }
+            }
+            if (min != i) {
+                int temp = nums[i];
+                nums[i] = nums[min];
+                nums[min] = temp;
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+    }
+
     public int binarySearch(int target) {
-        int left = 0;
-        int right = nums.length - 1;
-        while (left <= right) {
-            int middle = (left + right) / 2;
-            if (target < nums[middle]) {
-                right = middle - 1;
-            } else if (target > nums[middle]) {
-                left = middle + 1;
+        int low = 0;
+        int high = nums.length - 1;
+        int mid = 0;
+        while (low <= high) {
+            mid = (low + high) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] < target) {
+                low = mid + 1;
             } else {
-                return middle;
+                high = mid - 1;
             }
         }
         return -1;
@@ -37,6 +61,7 @@ public class SearchMenachery {
     public static void main(String[] args) {
         SearchMenachery tests = new SearchMenachery();
         System.out.println(tests.seqsearch(20));
-        System.out.println(tests.binarySearch(30));
+        tests.selectionsort();
+        System.out.println("Location is at index: " + tests.binarySearch(49));
     }
 }

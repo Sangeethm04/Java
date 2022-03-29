@@ -15,7 +15,7 @@ public class MasterOrderMenachery {
     public int getTotalBoxes() {
         int totalBoxes = 0;
         for (CookieOrderMenachery order: orders) {
-            totalBoxes = order.getNumBoxes();
+            totalBoxes += order.getNumBoxes();
         }
         return totalBoxes;
     }
@@ -23,9 +23,8 @@ public class MasterOrderMenachery {
         int totalBoxes = 0;
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getVariety().equals(cookieVar)) {
-                totalBoxes = orders.get(i).getNumBoxes();
+                totalBoxes += orders.get(i).getNumBoxes();
                 orders.remove(i);
-                i--;
             }
         }
         return totalBoxes;
@@ -33,7 +32,7 @@ public class MasterOrderMenachery {
     public String toString() {
         String result = "";
         for (CookieOrderMenachery order: orders) {
-            result = order.toString() + "\n";
+            result += order.toString() + "\n";
         }
         return result;
     }
