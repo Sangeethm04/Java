@@ -9,6 +9,13 @@
             "name": "Launch WorkerMenacheryTester",
             "request": "launch",
             "mainClass": "WorkerMenacheryTester",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch WorkerMenacheryTester",
+            "request": "launch",
+            "mainClass": "WorkerMenacheryTester",
             "projectName": "Java_a7821086"
         },
         {

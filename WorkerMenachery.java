@@ -1,8 +1,3 @@
-// Write a superclass Worker and subclass HourlyWorker.
-
-// Every worker has a name (first and last) and salary rate (amount earned per hour). This class should have a constructor, computePay(int hours) method, two accessor methods, and a toString method. The computePay method will return how much the worker earned without overtime and will return zero if hours worked is less than or equal to zero.
-
-
 public class WorkerMenachery {
     private String firstName;
     private String lastName;
