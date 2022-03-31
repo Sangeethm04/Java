@@ -1,3 +1,5 @@
+import Chapt9.Pet;
+
 public class TesterClass {
    // main method for testing
    public static void main(String[] args) {

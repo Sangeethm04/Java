@@ -1,3 +1,5 @@
+import Chapt9.Student;
+
 /** class Student
  * with 4 instance variables,
  * 3 constructors, a print method,
