@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HourlyWorkerMenachery",
+            "request": "launch",
+            "mainClass": "HourlyWorkerMenachery",
+            "projectName": "Java-CSA_3aa90337"
+        },
+        {
+            "type": "java",
             "name": "Launch WorkerMenacheryTester",
             "request": "launch",
             "mainClass": "WorkerMenacheryTester",
