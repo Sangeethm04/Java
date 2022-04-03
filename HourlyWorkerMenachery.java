@@ -1,6 +1,6 @@
 public class HourlyWorkerMenachery extends WorkerMenachery {
-    private static int overtimeCount = 0;
-    private static double totalOvertimePay = 0;
+    private static int overtimeCount = 0; //how many employees are receiving overtime pay
+    private static double totalOvertimePay = 0; //how much overtime pay is being given total from all employees
 
     public HourlyWorkerMenachery(String firstName, String lastName, double salaryRate) {
         super(firstName, lastName, salaryRate);
@@ -10,7 +10,7 @@ public class HourlyWorkerMenachery extends WorkerMenachery {
         return overtimeCount;
     }
 
-    public static double getOvertimePay() {
+    public static double getTotalOvertimePay() {
         return totalOvertimePay;
     }
     
@@ -19,13 +19,13 @@ public class HourlyWorkerMenachery extends WorkerMenachery {
             return super.computePay(hoursWorked);
         } else {
             overtimeCount++;
-            totalOvertimePay += (super.computePay(40) + (super.computePay(hoursWorked - 40) * 1.5));
+            totalOvertimePay += (super.computePay(hoursWorked - 40) * 1.5);
             return (super.computePay(40) + (super.computePay(hoursWorked - 40) * 1.5));
         }
     }
 
     public String toString() {
-        return super.toString() + "Overtime Count: " + overtimeCount + " Overtime Pay: " + totalOvertimePay;
+        return super.toString() + "\nHow many employees are receiving overtime pay: " + overtimeCount + "\nOvertime pay is being given total: " + totalOvertimePay;
     }
 
 

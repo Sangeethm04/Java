@@ -9,6 +9,20 @@
             "name": "Launch HourlyWorkerMenachery",
             "request": "launch",
             "mainClass": "HourlyWorkerMenachery",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Account",
+            "request": "launch",
+            "mainClass": "Account",
+            "projectName": "Java-CSA_e58f39d5"
+        },
+        {
+            "type": "java",
+            "name": "Launch HourlyWorkerMenachery",
+            "request": "launch",
+            "mainClass": "HourlyWorkerMenachery",
             "projectName": "Java-CSA_3aa90337"
         },
         {
