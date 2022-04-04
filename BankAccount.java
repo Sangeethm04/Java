@@ -1,5 +1,3 @@
-// Bank Account Class for Chapter 10 Programming Projects
-
 public class BankAccount {
    protected double balance;
 
@@ -12,11 +10,11 @@ public class BankAccount {
    }
 
    public void deposit(double amount) {
-      balance = balance + amount;
+      balance += amount;
    }
 
    public void withdraw(double amount) {
-      balance = balance - amount;
+      balance -= amount;
    }
 
    public double getBalance() {

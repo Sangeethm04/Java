@@ -1,3 +1,4 @@
+package Chapt9.Worker;
 public class Account {
     private String name;
     private double balance;
@@ -34,7 +35,7 @@ public class Account {
 class SavingsAccount extends Account{
     private double interestRate;
 
-    public SavingsAccount(String name, double balance, double interestRate) {
+    public SavingsAccount(double balance) {
         super(name, balance);
         this.interestRate = interestRate;
     }
