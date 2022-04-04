@@ -1,3 +1,4 @@
+package Chapt9.Worker;
 public class HourlyWorkerMenachery extends WorkerMenachery {
     private static int overtimeCount = 0; //how many employees are receiving overtime pay
     private static double totalOvertimePay = 0; //how much overtime pay is being given total from all employees

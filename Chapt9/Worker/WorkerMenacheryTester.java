@@ -1,3 +1,5 @@
+import Chapt9.Worker.WorkerMenachery;
+
 public class WorkerMenacheryTester {
     public static void main(String[] args) {
         WorkerMenachery worker1 = new WorkerMenachery("Bob", "Smith", 5);
