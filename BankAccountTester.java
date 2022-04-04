@@ -11,7 +11,7 @@ public class BankAccountTester {
 
 		BankAccount test2 = new BankAccount(2);
 		test2.deposit(5000);
-		System.out.println("\nTest2 balance should be $5000, and it is " + test2.getBalance());
+		System.out.println("\nTest2 balance should be $5000, and it is " + test2.getBalance());	//should be $5002 which is an error
 		System.out.println(test2);
 
 
@@ -33,7 +33,7 @@ public class BankAccountTester {
 		System.out.println("\nTest3 balance should now be $10414, and it is " + test3.getBalance());
 		System.out.println(test3);
 
-
+		//Initialy had wrong object delcaration for test4, but it was fixed, the sub class should go in right before the parameter not the parent class
 		CheckingAccount test4 = new CheckingAccount(4000);
 		test4.withdraw(1000);
 		test4.withdraw(1000);

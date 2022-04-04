@@ -6,7 +6,7 @@ public class SavingsAccount extends BankAccount {
     }
 
     public void addInterest() {
-        deposit(getBalance() * (1 + (interestRate / 100)));
+        super.deposit(getBalance() * (1 + (interestRate / 100)));
     }
 
     public String toString() {
