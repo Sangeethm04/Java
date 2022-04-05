@@ -1,7 +1,7 @@
-public class BankAccountTester {
+public class BankAccountTesterMenachery {
 	public static void main(String[] args) {
 
-		SavingsAccount test1 = new SavingsAccount(5);
+		SavingsAccountMenachery test1 = new SavingsAccountMenachery(5);
 		test1.deposit(1000);
 		test1.addInterest();
 		test1.addInterest();
@@ -9,13 +9,13 @@ public class BankAccountTester {
 		System.out.println(test1);
 
 
-		BankAccount test2 = new BankAccount(2);
+		BankAccountMenachery test2 = new BankAccountMenachery(2);
 		test2.deposit(5000);
 		System.out.println("\nTest2 balance should be $5000, and it is " + test2.getBalance());	//should be $5002 which is an error
 		System.out.println(test2);
 
 
-		CheckingAccount test3 = new CheckingAccount(10000);
+		CheckingAccountMenachery test3 = new CheckingAccountMenachery(10000);
 		test3.deposit(1000);
 		test3.withdraw(3000);
 		test3.withdraw(200);
@@ -34,7 +34,7 @@ public class BankAccountTester {
 		System.out.println(test3);
 
 		//Initialy had wrong object delcaration for test4, but it was fixed, the sub class should go in right before the parameter not the parent class
-		CheckingAccount test4 = new CheckingAccount(4000);
+		CheckingAccountMenachery test4 = new CheckingAccountMenachery(4000);
 		test4.withdraw(1000);
 		test4.withdraw(1000);
 		test4.withdraw(1000);

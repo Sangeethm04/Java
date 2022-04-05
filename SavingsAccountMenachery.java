@@ -1,7 +1,7 @@
-public class SavingsAccount extends BankAccount {
+public class SavingsAccountMenachery extends BankAccountMenachery {
     private double interestRate;
 
-    public SavingsAccount(double interestRate) {
+    public SavingsAccountMenachery(double interestRate) {
         this.interestRate = interestRate;
     }
 

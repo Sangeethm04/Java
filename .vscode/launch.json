@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BankAccount",
+            "request": "launch",
+            "mainClass": "BankAccount",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
+            "name": "Launch BankAccountTesterMenachery",
+            "request": "launch",
+            "mainClass": "BankAccountTesterMenachery",
+            "projectName": "Java_a7821086"
+        },
+        {
+            "type": "java",
             "name": "Launch SavingsAccount",
             "request": "launch",
             "mainClass": "SavingsAccount",
