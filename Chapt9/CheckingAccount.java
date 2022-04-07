@@ -1,3 +1,4 @@
+package Chapt9;
 public class CheckingAccount extends BankAccount {
     private int transactionCount;
     private static final int FREE_TRANSACTIONS = 3;
