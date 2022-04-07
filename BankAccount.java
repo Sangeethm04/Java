@@ -1,4 +1,3 @@
-package Chapt9;
 public class BankAccount {
     private double balance;
     public void deposit(double amount) {
