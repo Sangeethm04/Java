@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Chapt9/Bank Account/CheckingAccountMenachery.java
 public class CheckingAccountMenachery extends BankAccountMenachery {
+=======
+public class CheckingAccount extends BankAccount {
+>>>>>>> parent of 7c889c3 (ev):CheckingAccount.java
     private int transactionCount;
     private static final int FREE_TRANSACTIONS = 3;
     private static final double TRANSACTION_FEE = 2.0;

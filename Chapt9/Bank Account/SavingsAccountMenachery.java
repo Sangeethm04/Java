@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Chapt9/Bank Account/SavingsAccountMenachery.java
 public class SavingsAccountMenachery extends BankAccountMenachery {
+=======
+public class SavingsAccount extends BankAccount {
+>>>>>>> parent of 7c889c3 (ev):SavingsAccount.java
     private double interestRate;
 
     public SavingsAccountMenachery(double interestRate) {

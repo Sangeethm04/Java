@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Chapt9/Bank Account/BankAccountTesterMenachery.java
 public class BankAccountTesterMenachery {
+=======
+public class BankAccountTester {
+>>>>>>> parent of 7c889c3 (ev):BankAccountTester.java
 	public static void main(String[] args) {
 
 		SavingsAccountMenachery test1 = new SavingsAccountMenachery(5);

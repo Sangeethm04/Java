@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:Chapt9/BankAccountTester.java
 <<<<<<< HEAD:BankAccountTesterMenachery.java
 public class BankAccountTesterMenachery {
@@ -7,6 +8,13 @@ package Chapt9;
 >>>>>>> parent of 7c889c3 (ev):BankAccountTester.java
 public class BankAccountTester {
 >>>>>>> 7c889c3e99813241b91b5349d0cf0684f624a73e:Chapt9/BankAccountTester.java
+=======
+<<<<<<< HEAD:Chapt9/Bank Account/BankAccountTesterMenachery.java
+public class BankAccountTesterMenachery {
+=======
+public class BankAccountTester {
+>>>>>>> parent of 7c889c3 (ev):BankAccountTester.java
+>>>>>>> parent of 7c889c3 (ev)
 	public static void main(String[] args) {
 
 		SavingsAccountMenachery test1 = new SavingsAccountMenachery(5);

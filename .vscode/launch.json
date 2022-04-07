@@ -7,6 +7,7 @@
         {
             "type": "java",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "Launch BankAccount",
             "request": "launch",
             "mainClass": "BankAccount",
@@ -21,6 +22,8 @@
         },
         {
             "type": "java",
+=======
+>>>>>>> parent of 7c889c3 (ev)
 =======
 >>>>>>> parent of 7c889c3 (ev)
             "name": "Launch SavingsAccount",

@@ -1,4 +1,8 @@
+<<<<<<< HEAD:Chapt9/Bank Account/BankAccountMenachery.java
 public class BankAccountMenachery {
+=======
+public class BankAccount {
+>>>>>>> parent of 7c889c3 (ev):BankAccount.java
    private double balance;
 
    public BankAccountMenachery() {
