@@ -1,9 +1,5 @@
-<<<<<<< HEAD:BankAccountTesterMenachery.java
-public class BankAccountTesterMenachery {
-=======
 package Chapt9;
 public class BankAccountTester {
->>>>>>> 7c889c3e99813241b91b5349d0cf0684f624a73e:Chapt9/BankAccountTester.java
 	public static void main(String[] args) {
 
 		SavingsAccountMenachery test1 = new SavingsAccountMenachery(5);
