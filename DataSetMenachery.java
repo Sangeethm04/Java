@@ -29,6 +29,7 @@ public class DataSetMenachery {
         };
         DataSetMenachery test = new DataSetMenachery(arr);
         System.out.println("Sum of 1st test case: " + test.getSum());
+
         int[] arr2 = {
             25,
             -63,
@@ -39,12 +40,8 @@ public class DataSetMenachery {
         };
         DataSetMenachery test2 = new DataSetMenachery(arr2);
         System.out.println("Sum of 2nd test case: " + test2.getSum());
+
         int[] arr3 = {
-            0,
-            0,
-            0,
-            0,
-            0,
             0
         };
         DataSetMenachery test3 = new DataSetMenachery(arr3);

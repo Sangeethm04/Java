@@ -24,5 +24,8 @@ public class SentenceMenachery {
         SentenceMenachery greeting1 = new SentenceMenachery("Sangeeth Menachery");
         greeting1.reverse();
         System.out.println(greeting1.getText());
+        SentenceMenachery greeting2 = new SentenceMenachery("s");
+        greeting2.reverse();
+        System.out.println(greeting2.getText());
     }
 }
