@@ -30,8 +30,8 @@ public class NumberSystem
     }
 
     public static void main(String[] args) {
-        System.out.println(gcf(3, 30));
-        reduceFraction(3, 30);
+        System.out.println(gcf(30, 25));
+        reduceFraction(30, 3);
     }
 
 }
